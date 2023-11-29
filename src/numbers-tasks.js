@@ -234,7 +234,7 @@ function toNumber(/* value, def */) {
  *   0  => 0
  */
 function getCube(num) {
-  return num * num * num;
+  return num ** 3;
 }
 
 /**
@@ -265,12 +265,13 @@ function getFibonacciNumber(/* index */) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i + 1) {
-    sum = +i;
-  }
-  return sum;
+function getSumToN(/* n */) {
+  // let sum = 0;
+  // for (let i = 1; i <= n; i + 1) {
+  //   sum = +i;
+  // }
+  // return sum;
+  throw new Error('Not implemented');
 }
 
 /**
